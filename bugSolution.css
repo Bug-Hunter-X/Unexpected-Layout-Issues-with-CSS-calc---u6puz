@@ -1,0 +1,18 @@
+/* bugSolution.css */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.item {
+  flex: 1;
+  /* Corrected calculation: consistent units */
+  /* Ensure that values inside calc are of the same unit type */
+  margin: 10px;
+  width: calc(100% - 20px); /* or use a different approach */ 
+}
+
+/* Example of fixing unit mismatch */
+.element {
+  width: calc(100% - 2em); /* Correct: em and em */ 
+} 
